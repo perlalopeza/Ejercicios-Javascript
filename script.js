@@ -21,8 +21,8 @@ const doblesConMap = (numeros) => {
 }
 
 const imprimirEjercicio2DOM = () => {
-    document.getElementById("numerosOriginales").innerText = `Numeros originales: ${numeros}`;
-    document.getElementById("numerosDoblados").textContent = "Números doblados: " + doblesConMap(numeros);
+    document.getElementById("numerosOriginales").innerText = ` ${numeros}`;
+    document.getElementById("numerosDoblados").textContent = doblesConMap(numeros);
 }
 imprimirEjercicio2DOM();
 
@@ -44,7 +44,7 @@ const ProductoConReduce = (array) => {
 }
 
 const imprimirEjercicio3DOM = () => {
-    document.getElementById("numeros3").innerText = `Números originales: ${array3}`;
+    document.getElementById("numeros3").innerText = ` ${array3}`;
     document.getElementById("numerosSuma").innerText = ` Suma: ` + sumaConReduce(array3);
     document.getElementById("numerosProducto").innerText = `Producto: ` + ProductoConReduce(array3);
 }
@@ -69,7 +69,9 @@ const loopsConFilterEIclude = (student1, student2) => {
 
 const imprimirEjercicio4DOM = () => {
 
-    document.getElementById("cursos").innerText = `Cursos en común: ` + loopsConFilterEIclude(student1Courses, student2Courses);
+    document.getElementById("cursos").innerText = loopsConFilterEIclude(student1Courses, student2Courses);
+    document.getElementById("array1").innerText = `[${student1Courses}]`;
+    document.getElementById("array2").innerText = `[${student2Courses}]`;
 }
 imprimirEjercicio4DOM();
 
@@ -78,27 +80,28 @@ imprimirEjercicio4DOM();
 let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
 
 const ejercicio5 = (array) => {
+    document.getElementById("arrayI").innerText = `People: [${people}]`;
     // Write a command that prints out all of the people in the list.
-    document.getElementById("caso1").innerText = `Arreglo Inicial: ` + array.join(" - ");
+    document.getElementById("caso1").innerText = array.join(" - ");
     // Write the command to remove "Dani" from the array.
     let posicion = array.indexOf('Dani');
     array.splice(posicion, 1);
-    document.getElementById("caso2").innerText = `Eliminar a Dani: ` + array.join(" - ");
+    document.getElementById("caso2").innerText = array.join(" - ");
     // Write the command to remove "Juan" from the array.
     let posicion2 = array.indexOf('Juan');
     array.splice(posicion2, 1);
-    document.getElementById("caso3").innerText = `Eliminar a Juan: ` + array.join(" - ");
+    document.getElementById("caso3").innerText = array.join(" - ");
     // Write the command to move "Luis" to the front of the array.
     let posicionLuis = array.indexOf('Luis');
     array.splice(posicionLuis, 1);
     array.unshift('Luis');
-    document.getElementById("caso4").innerText = `Mover a Luis al inicio: ` + array.join(" - ");
+    document.getElementById("caso4").innerText = array.join(" - ");
     // Write the command to add your name to the end of the array.
     array.push('Perla');
-    document.getElementById("caso5").innerText = `Añadir mi nombre al final: ` + array.join(" - ");
+    document.getElementById("caso5").innerText = array.join(" - ");
     // Using a loop, iterate through this array and after console.log "Maria", exit from the loop.
     for (let persona of people) {
-        console.log(persona);
+       console.log(persona);
         if (persona === "Maria") break;
     }
 
@@ -122,8 +125,8 @@ function bubble(array) {
 }
 
 const imprimirEjercicio6DOM = ()=>{
-    document.getElementById("desordenado").innerText = `Array desordenado: ${input}`; 
-    document.getElementById("bubble").innerText = `Orden con Bubble: ` + bubble(input);
+    document.getElementById("desordenado").innerText = ` [${input}]`; 
+    document.getElementById("bubble").innerText = `[`+bubble(input)+`]`;
 }
 imprimirEjercicio6DOM();
 

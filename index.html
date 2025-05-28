@@ -1,54 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Exercises-JavaScript</title>
 </head>
-<body>
+
+<body class="bg-black text-warning text-center">
+
+    <h1 class="text-danger">Ejercicios con JavaScript</h1>
 
     <div>
-        <h1>Ejercicio 1</h1>
-        <h2 id="ejercicio1"></h2>
-    </div>
+        <div>
+            <table class="table text-center d-inline table-success table-dark table-sm">
+                <thead>
+                    <h3>Exercise 1: Complete the function to print out the string: This is a sentence. </h3>
+                    <p>
+                        let arr = ["This", "is", "a", "sentence."]; <br>
+                        function printOutString() { <br>
+                        // your code here <br>
+                        }
+                        printOutString();
+                    </p>
+                    <tr>
+                        <th scope="col text">Ejercicio</th>
+                        <th scope="col">Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="ejercicio1"> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <div>
-        <h1>Ejercicio 2</h1>
-        <h2 id="numerosOriginales"></h2>
-        <h2 id="numerosDoblados"></h2>
+        <div>
+            <table class="table text-center d-inline table-success table-dark table-sm p-3">
+                <thead>
+                    <br>
+                    <h3>Exercise 2: (sugerencia map())</h3>
+                    <p>
+                        Write a function that:
+                    <ul>-Takes in an array of numbers.</ul>
+                    <ul>-Doubles the value of each number in the array.</ul>
+                    <ul>-Prints out the new updated array</ul>
+                    </p>
+                    <tr>
+                        <th scope="col text">Ejercicio</th>
+                        <th scope="col">Datos a Trabajar</th>
+                        <th scope="col">Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td id="numerosOriginales"> </td>
+                        <td id="numerosDoblados"> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    </div>
+        <div>
+            <table class="table text-center d-inline table-success table-dark table-sm p-3">
+                <thead>
+                    <br>
+                    <h3>Exercise #3 (sugerencia reduce())</h3>
+                    <p>
+                        Write a program to compute the sum and product (multiplication) of an array of numbers. <br>
+                        Print out the sum and the product.
+                    </p>
+                    <tr>
+                        <th scope="col text">Ejercicio</th>
+                        <th scope="col">Datos a Trabajar</th>
+                        <th scope="col">Suma</th>
+                        <th scope="col">Producto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td id="numeros3"> </td>
+                        <td id="numerosSuma"> </td>
+                        <td id="numerosProducto"> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <div>
-        <h1>Ejercicio 3</h1>
-        <h2 id="numeros3"></h2>
-        <h2 id="numerosSuma"></h2>
-        <h2 id="numerosProducto"></h2>
+        <div>
+            <table class="table text-center d-inline table-success table-dark table-sm p-3">
+                <thead>
+                    <br>
+                    <h3>Exercise #4 (sugerencia filter() e includes())</h3>
+                    <p>
+                        Create a program that loops over the 2 arrays; if there are any common courses print them out to
+                        the console.
+                    </p>
+                    <tr>
+                        <th scope="col text">Ejercicio</th>
+                        <th scope="col">Array 1</th>
+                        <th scope="col">Array 2</th>
+                        <th scope="col">Cursos en común</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td id="array1"></td>
+                        <td id="array2"></td>
+                        <td id="cursos"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    </div>
 
-    <div>
-        <h1>Ejercicio 4</h1>
-        <h2 id="cursos"></h2>
-    </div>
+        <div>
+            <table class="table text-center d-inline table-success table-dark table-sm p-3">
+                <thead>
+                    <br>
+                    <h3>Exercise #5 </h3>
+                    <p>
+                        For each of the exercises below, assume you are starting with the following people array.
+                    </p>
+                    <tr>
+                        <th scope="col text">Ejercicio 5: Casos</th>
+                        <th id="arrayI"></th>
 
-    <div>
-        <h1>Ejercicio 5</h1>
-        <h2 id="caso1"></h2>
-        <h2 id="caso2"></h2>
-        <h2 id="caso3"></h2>
-        <h2 id="caso4"></h2>
-        <h2 id="caso5"></h2>
-        <h2 id="caso6"></h2>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Write a command that prints out all of the people in the list.</th>
+                        <td id="caso1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Write the command to remove "Dani" from the array.</th>
+                        <td id="caso2"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Write the command to remove "Juan" from the array.</th>
+                        <td id="caso3"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Write the command to move "Luis" to the front of the array.</th>
+                        <td id="caso4"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Write the command to add your name to the end of the array.</th>
+                        <td id="caso5"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Using a loop, iterate through this array and after console.log "Maria", exit
+                            from the loop.</th>
+                        <td>El resultado se observa en consola imprime(Luis Maria)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Write the command that gives the indexOf where "Maria" is located.
+                        </th>
+                        <td id="caso6"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    </div>
+        <div>
+            <table class="table text-center d-inline table-success table-dark table-sm p-3">
+                <thead>
+                    <br>
+                    <h3>Exercise #6</h3>
+                    <p>
+                        Write a function that performs the bubble algorithm.
 
-    <div>
-        <h1>Ejercicio 6</h1>
-        <h2 id="desordenado"></h2>
-        <h2 id="bubble"></h2>
+                    </p>
+                    <tr>
+                        <th scope="col text">Ejercicio</th>
+                        <th scope="col">Desordenado</th>
+                        <th scope="col">Orden con Bubble</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td id="desordenado"></td>
+                        <td id="bubble"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
